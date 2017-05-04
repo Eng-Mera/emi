@@ -1,0 +1,63 @@
+select roles.display_name as Role, oauth_clients.id as `Clinet ID`, oauth_clients.secret as `Client Secret`, users.email as Username, '123456' as Password FROM users, role_user, roles, oauth_clients, oauth_sessions WHERE oauth_sessions.owner_id = users.id and oauth_sessions.client_id = oauth_clients.id AND users.id = role_user.user_id AND roles.id = role_user.role_id AND users.id in (51,51,641,641,641,723,646,642,635,636,638,651)
+
+Super Admin
+f3d259ddd3ed8ff3843839b
+4c7f6f8fa93d59c45502c0ae8c4a95b
+admin@htr.com
+123456
+
+Restaurant Manager
+f3d259ddd3ed8ff3843839c
+4c7f6f8fa93d59c45502c0ae8c4a95c
+zhermiston@example.net
+123456
+RuClXpyRRHIi7DNFBiXADc8Cha5n27OvYHRgLiIc
+VqqeR69hUZyS2DtzqZDdlZNFuwTMNMVZqwoC05xZ
+
+Restaurant Admin
+f3d259ddd3ed8ff3843839d
+4c7f6f8fa93d59c45502c0ae8c4a95d
+clementine85@example.net
+123456
+5hhPnGk7jIZbe25Pxq3G2JfzwanLlv29LejyFsKb
+F2XOnk5ijj6yST9LL0EEnc9DDUSaNXsMtMZG0XVs
+
+Reservation Manager
+f3d259ddd3ed8ff3843839e
+4c7f6f8fa93d59c45502c0ae8c4a95e
+jordon.buckridge@example.com
+123456
+GIxKfNFIjbnxJF6quycFdEwGKiD8ZS4wxMZ12eSx
+05Kzt6WT3j9tx6GY0bMjiWppbzmhGghDlmHnE0nd
+
+Auditor
+f3d259ddd3ed8ff3843839f
+4c7f6f8fa93d59c45502c0ae8c4a95f
+kiarra.conn@example.org
+123456
+fH4BToYBCRpzItgtaExppnjlGa2F4EeQ3ArglicU
+EsKM99x7KJ6gZ19jtDHZek0W13j8fW9BhgNz1UVj
+
+Auditor of Auditors
+f3d259ddd3ed8ff3843839g
+4c7f6f8fa93d59c45502c0ae8c4a95g
+bogan.garth@example.com
+123456
+DISsA5ipAabXdZYiTuDJ0mamlRtHkLw6tkyGaggj
+yBhSTjLA3FnTZ2wEVfr93gaq4z8kxbC0xD6bbY7h
+
+Blogger and Food Critics
+f3d259ddd3ed8ff3843839h
+4c7f6f8fa93d59c45502c0ae8c4a95h
+mcclure.hattie@example.org
+123456
+ypX3n8rw95Jk42ZTE7uURdiBAS6GHmbYiYchsSLJ
+OTAGIN6ICG4K2HSFCdUugYC5Uiasfq4PfJsmCHon
+
+Diner
+f3d259ddd3ed8ff3843839i
+4c7f6f8fa93d59c45502c0ae8c4a95i
+wschiller@example.net
+123456
+nlnI9PTXffdXHMOLXefxOj77oNqO5NU7ccR2LEqH
+QOMg86z1OdGWylNveTJyyJ5uy2VGiPuqa7qE5h8j

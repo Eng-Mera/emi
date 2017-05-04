@@ -1,0 +1,99 @@
+<?php
+
+/**
+ * User resource representation.
+ *
+ * @Resource("Users", uri="/users")
+ */
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Http\Requests;
+
+class UserController extends Controller {
+
+    /**
+     * Get a JSON representation of all the registered users.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index() {
+        return [1];
+        //
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create() {
+        //
+    }
+
+    /**
+     * Register user
+     *
+     * Register a new user with a `username` and `password`.
+     * 
+     * @Post("/")
+     * @Versions({"v1"})
+     * @Request("username=foo&password=bar", contentType="application/x-www-form-urlencoded")
+     * @Response(200, body={"id": 10, "username": "foo"})
+     * 
+     * @Parameters({
+     *      @Parameter("page", description="The page of results to view.", default=1),
+     *      @Parameter("limit", description="The amount of results per page.", default=10)
+     * })
+     * 
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request) {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id) {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id) {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id) {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id) {
+        //
+    }
+
+}
+

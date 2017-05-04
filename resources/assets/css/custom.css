@@ -1,0 +1,33 @@
+.highlight {
+    background: yellow;
+}
+
+/*table.dataTable tbody th, table.dataTable tbody td {*/
+    /*overflow: hidden; !* this is what fixes the expansion *!*/
+    /*text-overflow: ellipsis; !* not supported in all browsers, but I accepted the tradeoff *!*/
+    /*white-space: nowrap;*/
+/*}*/
+
+/*table.dataTable {*/
+    /*table-layout: fixed*/
+/*}*/
+
+.grid-icon-center {
+    text-align: center;
+    font-size: 80px;
+}
+#links{
+    position: relative;
+}
+#links .img-controller img{
+    width: 100%;
+}
+
+#links .img-controller{
+    display: inline-block;
+    width: 15%;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 7px;
+    text-align: right;
+}

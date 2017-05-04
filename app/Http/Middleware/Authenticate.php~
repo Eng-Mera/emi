@@ -1,0 +1,43 @@
+<?php
+
+namespace App\Http\Middleware;
+
+use App\Route;
+use App\User;
+use Closure;
+use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+
+class Authenticate
+{
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request $request
+     * @param  \Closure $next
+     * @param  string|null $guard
+     * @return mixed
+     */
+    public function handle($request, Closure $next, $guard = null)
+    {
+        //$currentRoute = ltrim($request->route()->uri(), '/');
+
+        //$method = $request->route()->methods();
+
+        //$route = Route::with('routePermissions')->wherePath($currentRoute)->whereIn('method', $method)->first();
+
+        //if (!$route || empty($route->routePermissions)) {
+        //    throw new NotFoundHttpException();
+       // }
+
+        //$permissions = $route->routePermissions->pluck('name')->toArray();
+
+        //$roles = $route->routeRoles->pluck('name')->toArray();
+
+       // if (!$route->except && !User::getCurrentUser()->ability($roles, $permissions, false)) {
+       //     throw new AccessDeniedHttpException('You aren\'t allowed to be here');
+       // }
+
+        //return $next($request);
+    }
+}
